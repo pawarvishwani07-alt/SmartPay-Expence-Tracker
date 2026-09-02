@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Register - SmartPay</title>
+
+    <!-- Common SmartPay Design -->
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="stylesheet"href="css/register.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            SmartPay
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html"class="active">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="register-container">
+
+
+        <div class="register-card">
+
+
+            <!-- Header -->
+
+            <div class="register-header">
+
+                <div class="register-icon">
+                    👤
+                </div>
+
+                <h1>
+                    Create Account
+                </h1>
+
+                <p>
+                    Create your private SmartPay account
+                </p>
+
+            </div>
+
+
+
+            <form id="registerForm">
+
+
+                <!-- Name -->
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+
+                <!-- Password -->
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-toggle"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+
+                    <small id="passwordError"></small>
+
+                </div>
+
+
+
+                <!-- Confirm Password -->
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                            class="password-toggle"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+
+                    <small id="confirmPasswordError"></small>
+
+                </div>
+
+
+
+                <!-- Income -->
+
+                <div class="input-group">
+
+                    <label for="income">
+                        Monthly Income / Budget
+                    </label>
+
+                    <input
+                        type="number"
+                        id="income"
+                        name="income"
+                        placeholder="Example: 50000"
+                        min="0"
+                        step="1"
+                        required
+                    >
+
+                    <small id="incomeError"></small>
+
+                </div>
+
+
+
+                <!-- Terms -->
+
+                <div class="terms-box">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            I agree to use SmartPay for my
+                            personal expense tracking.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- Register Button -->
+
+                <button
+                    type="submit"
+                    class="register-btn"
+                >
+                    Create SmartPay Account
+                </button>
+
+
+
+                <!-- Message -->
+
+                <p
+                    id="registerMessage"
+                    class="register-message"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- Login Link -->
+
+            <div class="login-link">
+
+                <p>
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Home -->
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Register JavaScript -->
+
+    <script src="js/register.js"></script>
+
+
+</body>
+
+</html>

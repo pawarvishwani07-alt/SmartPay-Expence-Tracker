@@ -1,0 +1,1011 @@
+/* =========================
+   DASHBOARD CONTAINER
+========================= */
+
+.dashboard-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 55px 25px 80px;
+
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome-section {
+
+    margin-bottom: 35px;
+
+}
+
+
+.dashboard-label {
+
+    color: #38bdf8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.welcome-section h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.welcome-section p:last-child {
+
+    color: #94a3b8;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.income-card,
+.scanner-card,
+.notification-card,
+.balance-card,
+.expense-total-card,
+.chart-card,
+.alert-card {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================
+   INCOME
+========================= */
+
+.income-card {
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.card-label {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.income-card h2 {
+
+    font-size: 34px;
+
+}
+
+
+.income-info {
+
+    max-width: 350px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.section-heading p:last-child {
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   SCAN SECTION
+========================= */
+
+.scan-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+.scanner-card {
+
+    max-width: 500px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+}
+
+
+.scanner-box {
+
+    width: 250px;
+
+    height: 250px;
+
+    margin: auto;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(2, 6, 23, 0.4);
+
+}
+
+
+.scanner-symbol {
+
+    font-size: 70px;
+
+    color: #38bdf8;
+
+    margin-bottom: 10px;
+
+}
+
+
+.scanner-box p {
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+.scanner-box small {
+
+    color: #94a3b8;
+
+    margin-top: 5px;
+
+}
+
+
+/* Scanner corners */
+
+.scanner-corner {
+
+    position: absolute;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-color: #38bdf8;
+
+}
+
+
+.top-left {
+
+    top: 15px;
+
+    left: 15px;
+
+    border-top: 4px solid;
+
+    border-left: 4px solid;
+
+}
+
+
+.top-right {
+
+    top: 15px;
+
+    right: 15px;
+
+    border-top: 4px solid;
+
+    border-right: 4px solid;
+
+}
+
+
+.bottom-left {
+
+    bottom: 15px;
+
+    left: 15px;
+
+    border-bottom: 4px solid;
+
+    border-left: 4px solid;
+
+}
+
+
+.bottom-right {
+
+    bottom: 15px;
+
+    right: 15px;
+
+    border-bottom: 4px solid;
+
+    border-right: 4px solid;
+
+}
+
+
+.scan-pay-btn {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.scan-pay-btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.scan-message {
+
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    color: #86efac;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.notification-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+.notification-card {
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.notification-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(56, 189, 248, 0.12);
+
+    font-size: 23px;
+
+}
+
+
+.notification-title {
+
+    color: #38bdf8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+.notification-content h3 {
+
+    margin-top: 5px;
+
+    font-size: 17px;
+
+}
+
+
+.notification-content p {
+
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   BALANCE
+========================= */
+
+.balance-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+.balance-card {
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+}
+
+
+.balance-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.balance-card h2 {
+
+    font-size: 38px;
+
+}
+
+
+.balance-indicator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+}
+
+
+.balance-indicator span {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+}
+
+
+.balance-indicator.green {
+
+    background: rgba(34, 197, 94, 0.12);
+
+    color: #86efac;
+
+}
+
+
+.balance-indicator.green span {
+
+    background: #22c55e;
+
+}
+
+
+.balance-indicator.yellow {
+
+    background: rgba(234, 179, 8, 0.12);
+
+    color: #fde047;
+
+}
+
+
+.balance-indicator.yellow span {
+
+    background: #eab308;
+
+}
+
+
+.balance-indicator.red {
+
+    background: rgba(239, 68, 68, 0.12);
+
+    color: #fca5a5;
+
+}
+
+
+.balance-indicator.red span {
+
+    background: #ef4444;
+
+}
+
+
+.balance-progress {
+
+    height: 9px;
+
+    margin-top: 25px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    overflow: hidden;
+
+}
+
+
+.balance-progress-fill {
+
+    height: 100%;
+
+    width: 100%;
+
+    border-radius: inherit;
+
+    background: #22c55e;
+
+    transition: width 0.5s;
+
+}
+
+
+.balance-message {
+
+    margin-top: 12px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   EXPENSE SECTION
+========================= */
+
+.expense-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+.period-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.period-btn {
+
+    padding: 10px 20px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: #cbd5e1;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.period-btn.active,
+.period-btn:hover {
+
+    color: white;
+
+    background: rgba(37, 99, 235, 0.5);
+
+}
+
+
+.expense-total-card {
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.expense-total-card p {
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+}
+
+
+.expense-total-card h2 {
+
+    font-size: 38px;
+
+    margin: 10px 0;
+
+}
+
+
+.expense-total-card span {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   PIE CHART
+========================= */
+
+.chart-card {
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+}
+
+
+.chart-card h3 {
+
+    margin-bottom: 25px;
+
+}
+
+
+.pie-chart-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.pie-chart {
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #38bdf8 0deg 90deg,
+        #22c55e 90deg 180deg,
+        #facc15 180deg 250deg,
+        #ef4444 250deg 360deg
+    );
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.chart-legend {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.legend-item {
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+
+/* =========================
+   TRANSACTIONS
+========================= */
+
+.transaction-section {
+
+    margin-bottom: 45px;
+
+}
+
+
+.table-container {
+
+    overflow-x: auto;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+
+th,
+td {
+
+    padding: 17px;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
+
+}
+
+
+th {
+
+    color: #38bdf8;
+
+    font-size: 13px;
+
+}
+
+
+td {
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+}
+
+
+td:last-child {
+
+    color: #fca5a5;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   ALERT
+========================= */
+
+.alert-section {
+
+    margin-bottom: 30px;
+
+}
+
+
+.alert-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.alert-icon {
+
+    font-size: 30px;
+
+}
+
+
+.alert-card h3 {
+
+    margin: 5px 0;
+
+}
+
+
+.alert-card p:last-child {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+.voice-btn {
+
+    margin-left: auto;
+
+    padding: 11px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .dashboard-container {
+
+        padding: 40px 18px 60px;
+
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .income-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .scanner-box {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+    .balance-top {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .period-buttons {
+
+        width: 100%;
+
+    }
+
+
+    .period-btn {
+
+        flex: 1;
+
+        padding: 10px 8px;
+
+    }
+
+
+    .pie-chart {
+
+        width: 210px;
+
+        height: 210px;
+
+    }
+
+
+    .alert-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .voice-btn {
+
+        margin-left: 0;
+
+        width: 100%;
+
+    }
+
+}

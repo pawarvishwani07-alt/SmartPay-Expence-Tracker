@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard - SmartPay</title>
+
+    <!-- Common SmartPay Background -->
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="stylesheet"href="css/dashboard.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet"href="css/login.css">
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            SmartPay
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html"class="active">Dashboard</a>
+            <a href="index.html"id="logoutLink">Logout</a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+
+        <section class="welcome-section">
+
+            <p class="dashboard-label">
+                SMARTPAY EXPENSE TRACKER
+            </p>
+
+            <h1 id="welcomeName">
+                Welcome, User 👋
+            </h1>
+
+            <p>
+                Manage your payments and automatically
+                track your expenses.
+            </p>
+
+        </section>
+
+
+
+        <section class="income-card">
+
+            <div>
+
+                <p class="card-label">
+                    Monthly Income / Budget
+                </p>
+
+                <h2 id="incomeAmount">
+                    ₹0
+                </h2>
+
+            </div>
+
+
+            <div class="income-info">
+
+                <span>
+                    Your spending is automatically
+                    calculated from your payments.
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="scan-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="dashboard-label">
+                        SMARTPAY PAYMENT
+                    </p>
+
+                    <h2>
+                        Scan & Pay
+                    </h2>
+
+                    <p>
+                        Scan a QR code to make a payment.
+                        Your payment will automatically
+                        become an expense.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="scanner-card">
+
+                <div class="scanner-box">
+
+                    <div class="scanner-corner top-left"></div>
+                    <div class="scanner-corner top-right"></div>
+                    <div class="scanner-corner bottom-left"></div>
+                    <div class="scanner-corner bottom-right"></div>
+
+                    <div class="scanner-symbol">
+                        ▦
+                    </div>
+
+                    <p>
+                        QR Scanner
+                    </p>
+
+                    <small>
+                        Scan to Pay
+                    </small>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="scanPayButton"
+                    class="scan-pay-btn"
+                >
+                    Scan & Pay
+                </button>
+
+
+                <p
+                    id="scanMessage"
+                    class="scan-message"
+                ></p>
+
+            </div>
+
+        </section>
+
+
+
+        <section
+            class="notification-section"
+            id="notificationSection"
+        >
+
+            <div class="notification-card">
+
+                <div class="notification-icon">
+                    🔔
+                </div>
+
+                <div class="notification-content">
+
+                    <span class="notification-title">
+                        Payment Notification
+                    </span>
+
+                    <h3 id="paymentNotification">
+                        No recent payment
+                    </h3>
+
+                    <p id="paymentNotificationTime">
+                        Your payment notification
+                        will appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="balance-section">
+
+            <div class="balance-card">
+
+                <div class="balance-top">
+
+                    <div>
+
+                        <p class="card-label">
+                            Remaining Amount
+                        </p>
+
+                        <h2 id="remainingAmount">
+                            ₹0
+                        </h2>
+
+                    </div>
+
+                    <div
+                        id="balanceIndicator"
+                        class="balance-indicator green"
+                    >
+                        <span></span>
+                        <strong>Safe</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="balance-progress">
+
+                    <div
+                        id="balanceProgress"
+                        class="balance-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p
+                    id="balanceMessage"
+                    class="balance-message"
+                >
+                    Your available amount is healthy.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="expense-section">
+
+            <div class="section-heading">
+
+                <p class="dashboard-label">
+                    AUTOMATIC EXPENSE TRACKER
+                </p>
+
+                <h2>
+                    Expense Overview
+                </h2>
+
+            </div>
+
+
+            <!-- DAY WEEK MONTH -->
+
+            <div class="period-buttons">
+
+                <button
+                    class="period-btn active"
+                    data-period="day"
+                >
+                    Day
+                </button>
+
+                <button
+                    class="period-btn"
+                    data-period="week"
+                >
+                    Week
+                </button>
+
+                <button
+                    class="period-btn"
+                    data-period="month"
+                >
+                    Month
+                </button>
+
+            </div>
+
+
+            <!-- Total -->
+
+            <div class="expense-total-card">
+
+                <p id="periodTitle">
+                    Today's Expense
+                </p>
+
+                <h2 id="periodExpense">
+                    ₹0
+                </h2>
+
+                <span>
+                    Automatically calculated
+                </span>
+
+            </div>
+
+
+
+            <div class="chart-card">
+
+                <h3>
+                    Spending by Category
+                </h3>
+
+                <div class="pie-chart-container">
+
+                    <div
+                        id="pieChart"
+                        class="pie-chart"
+                    >
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="chartLegend"
+                    class="chart-legend"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="transaction-section">
+
+            <div class="section-heading">
+
+                <p class="dashboard-label">
+                    AUTOMATIC RECORD
+                </p>
+
+                <h2>
+                    Payment History
+                </h2>
+
+                <p>
+                    Payments made through SmartPay
+                    automatically appear here.
+                </p>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Time
+                            </th>
+
+                            <th>
+                                Purpose
+                            </th>
+
+                            <th>
+                                Amount
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="transactionTable">
+
+                        <tr>
+
+                            <td colspan="4">
+                                No payments yet.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="alert-section">
+
+            <div
+                id="alertCard"
+                class="alert-card"
+            >
+
+                <div class="alert-icon">
+                    🔔
+                </div>
+
+
+                <div>
+
+                    <p class="card-label">
+                        SmartPay Alert
+                    </p>
+
+                    <h3 id="alertTitle">
+                        Your balance is healthy
+                    </h3>
+
+                    <p id="alertText">
+                        SmartPay will alert you when
+                        your available amount becomes low.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="testAlertButton"
+                    class="voice-btn"
+                >
+                    🔊 Test Alert
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
